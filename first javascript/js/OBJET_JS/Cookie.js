@@ -1,0 +1,1 @@
+document.cookie="nom=wouwo;prenom=yannick;email=yannickwouwo@gmail.com"

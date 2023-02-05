@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- CREATION DE LA NAVBAR -->
+
+<nav class="navbar navbar-expand-lg fixed-top" style="background-image: url(Images/nav.png); background-color: #086;">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-3 ms-md-5" href="#">
+        <img src="Images/logo.png" class="img-fluid" width="40" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span>
+          <i class="fa fa-bars fa-2x text-white" aria-hidden="true"></i>
+      </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown px-3">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              offres
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#tarif">pack succes</a></li>
+              <li><a class="dropdown-item" href="#tarif">pack premium</a></li>
+              <li><a class="dropdown-item" href="#tarif">pack gold</a></li>
+            </ul>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" aria-current="page" href="#tarif">tarifs</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="#atouts">Nos atouts</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="#">
+              <img src="Images/search.png" class="img-fluid" width="25" height="25">
+            </a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="#">
+              <img src="images/aide.png" class="img-fluid" width="25" height="25">
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex me-4" role="search">
+          <button type="button" class="btn btn-success me-1">connexion</button>
+          <button type="button" class="btn btn-primary">inscription</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- CREATION MODAL -->
+  <!-- modal -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title display-5 text-primary" id="exampleModalLabel">Inscrivez-vous ici</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                  <label for="validationCustom01" class="form-label fw-bold">votre nom</label>
+                  <input type="text" class="form-control" id="validationCustom01" required>
+                  <div class="invalid-feedback">
+                     Ce champ est obligatoire
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom02" class="form-label fw-bold">votre prenom</label>
+                  <input type="text" class="form-control" id="validationCustom02" required>
+                  <div class="invalid-feedback">
+                    Ce champ est obligatoire
+                  </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="validationCustom02" class="form-label fw-bold">votre login</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Ce champ est obligatoire
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label fw-bold" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                        Vous devez accepter les conditions
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="col-12 text-end">
+                  <button class="btn btn-primary" type="submit">Soumettre</button>
+                </div>
+              </form>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+  
+
+  <!-- CAROUSEL -->
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Images/ban1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fs-1 fw-bold">Ouvert a vos besoins</h5>
+          <p>
+            <span class="d-block mb-3 fs-4">Notre equipe dynamique reste a votre écoute</span>
+            <button class="btn btn-primary px-5 border border-write">nos offres</button>
+          </p>
+        </div>
+      </div>
+
+      <div class="carousel-item active">
+        <img src="Images/ban2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fs-1 fw-bold">Ouvert a vos besoins</h5>
+          <p>
+            <span class="d-block mb-3 fs-4">Notre equipe dynamique reste a votre écoute</span>
+            <button class="btn btn-primary px-5 border border-write">nos offres</button>
+          </p>
+        </div>
+      </div>
+
+      <div class="carousel-item active">
+        <img src="Images/ban3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fs-1 fw-bold">Ouvert a vos besoins</h5>
+          <p>
+            <span class="d-block mb-3 fs-4">Notre equipe dynamique reste a votre écoute</span>
+            <button class="btn btn-primary px-5 me-3 border border-write">nos offres</button>
+            <button class="btn btn-success px-4 border border-write">nous connaitre</button>
+          </p>
+        </div>
+      </div>
+
+      <div class="carousel-item active">
+        <img src="Images/ban4.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fs-1 fw-bold">Ouvert a vos besoins</h5>
+          <p>
+            <span class="d-block mb-3 fs-4">Notre equipe dynamique reste a votre écoute</span>
+            <button class="btn btn-primary px-5 border border-write">nos offres</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+  <!-- CONTENU -->
+
+
+<div class="container mt-3">
+    <div class="row">
+      <p class="display-5 text-center">Le digital pour la transformation de votre quotidien</p>
+      <div class="col-lg-6">
+        <iframe class="w-100" style="height: 96%;" src="https://www.youtube.com/embed/rhcjYIPgpt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+<div class="col-lg-3 col-md-6">
+  <div class="card Firstcard mb-3 text-center border border-primary">
+    <img src="Images/TAV.png" alt="">
+    <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+  <div class="card Firstcard mb-3 text-center border border-primary">
+    <img src="Images/E-COM.png" alt="">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Goo somewhere</a>
+  </div>
+  </div>
+</div>
+
+  <p class="my-5 text-center">
+    <a href="#" class="btn btn-primary">Commander un service</a>
+ </p>
+
+   </div>
+</div>
+
+
+
+
+  <div class="container-fluid">
+    <div class="row bgimage">
+      <p class="text-white fw-bold display-3 text-center">Commander les meilleurs services pour les petits enfants</p>
+    </div>
+  </div>
+
+
+
+<div class="container">
+    <div class="row">
+      <p class="display-4 text-center mt-5" id="#tarif">Consulter les prix de nos offres</p>
+      <span class="text-center fs-4">les meilleurs prix pour vous</span>
+      
+      <div class="col-md-4">
+        <div class="card text-bg-success mb-3">
+          <div class="card-body">
+            <h5 class="Card title display-6 fw-bold">Success</h5>
+            <p class="card-text">
+              <span class="fs-1">5000 Fcfa</span><span>/mois</span>
+            <ul>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+            </ul>
+          </p>
+          <button class="w-100 p-1 boutonhover border border-write">select</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card bg-warning mb-3 text-write">
+          <div class="card-body">
+            <h5 class="Card title display-6 fw-bold">Gold</h5>
+            <p class="card-text">
+              <span class="fs-1">7000 Fcfa</span><span>/mois</span>
+            <ul>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+            </ul>
+          </p>
+          <button class="w-100 p-1 boutonhover border border-write">select</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card bg-secondary mb-3 text-write">
+          <div class="card-body">
+            <h5 class="Card title display-6 fw-bold">Platinium</h5>
+            <p class="card-text">
+              <span class="fs-1">12000</span><span>/mois</span>
+            <ul>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+              <li>Lorem ipsum ouf</li>
+            </ul>
+          </p>
+          <button class="w-100 p-1 boutonhover border border-write">select</button>
+          </div>
+        </div>
+      </div>
+      
+    
+    </div>
+</div>   
+
+
+<div class="container-fluid mt-5">
+  <div class="row bgimage1">
+    <p class=" text-white display-5 fw-bold text-center">
+      Un monde et un avenir meilleur est possible pour les plus petits 
+    </p>
+  </div>
+
+  <div class="row mt-5">
+    <p class="display-4 mb-5 text-center" id="#atouts">Decouvrez nos atouts</p>
+
+
+  <div class="col-md-6">
+      <div class="card bg-success mb-3">
+        <div class="card-body">
+          <h5 class="Card title display-4 text-write">protection des enfants <i class="fa-solid fa-umbrella"></i></h5>
+          <p class="card-text text-write">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam quasi, harum cum vel delectus placeat pariatur deserunt debitis, inventore architecto libero quo commodi eos dolore eaque error ab autem. In!
+        </p>
+        <a href="#" class="btn btn-primary border border-write p-2">en savoir+</a>
+        </div>
+      </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card bg-primary mb-3">
+      <div class="card-body">
+        <h5 class="Card title display-4 text-write">Developper les talents <i class="fas fa-rocket"></i></i></h5>
+        <p class="card-text text-write">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam quasi, harum cum vel delectus placeat pariatur deserunt debitis, inventore architecto libero quo commodi eos dolore eaque error ab autem. In!
+      </p>
+      <a href="#" class="btn btn-primary border border-write p-2">en savoir+</a>
+      </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+
+<!-- FOOTER -->
+
+<div class="container-fluid mt-5 pt-3" style="background-image: url(/Images/footer.png); background-color: #086; height: 70px;">
+  <footer>
+    <p class="text-center text-write">
+      copyRight: &copy; 2022 copyRight HTTC-Tous droits réservés
+    </p>
+  </footer>
+</div>
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>

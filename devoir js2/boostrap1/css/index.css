@@ -1,0 +1,96 @@
+
+/* NAVBAR */
+
+.nav-link,.nav-link:visited{
+    color: white;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: yellow;
+}
+
+.dropdown-menu{
+    background-color: rgba(0,0,100,0.6);
+}
+
+.dropdown-item{
+    color: white;
+}
+.dropdown-item:hover{
+    background-color: yellow;   
+}
+
+
+/* CAROUSEL */
+
+.carousel-item{
+    height: 30rem;
+}
+
+@media screen and(max-width:900px) {
+    .carousel-item{
+        height: auto;
+    }
+}
+
+.carousel-item img{
+    filter: brightness(30%);
+}
+
+@media screen and(min-width:900px) {
+  .carousel-caption{
+    margin-bottom: 90px;
+  }
+}
+
+
+/* CONTENU */
+
+
+iframe{
+    border: 5px groove black;
+}
+
+
+.Firstcard:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+
+.bgimage{
+    background-image: url(/Images/ban3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+
+.bgimage1{
+    background-image: url(/Images/ban4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+
+.boutonhover{
+    background-color: inherit;
+    border-radius: 5px;
+}
+
+.boutonhover:hover{
+    background-color: blue;
+    transition: 0.8s;
+    color: white;
+}
+
